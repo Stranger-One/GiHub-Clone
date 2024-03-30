@@ -5,18 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub: Let's build from here · GitHub</title>
+    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body theme="dark">
-    <div id="main" class="overflow-hidden">
+    <div id="main" class="overflow-hidden relative">
+        <!-- top navigation -->
+        <div class="hidden lg:flex fixed top-0 left-0 z-50 items-center justify-between w-full h-20 bg-black px-5">
+            <div class="left-nav border flex item-center gap-6">
+                <div class="links">
+                    <h2 class="text-md">Productivity</h2>
+                </div>
+                <div class="links">
+                    <h2 class="text-md">Security</h2>
+                </div>
+                <div class="links">
+                    <h2 class="text-md">Collaboration</h2>
+                </div>
+
+            </div>
+            <div class="right-nav border flex item-center gap-6">
+                <a href="" class=" w-full shrink-0 rounded-md border font-semibold px-6 py-2 md:w-fit">Start
+                    a free enterprise trail <i class="ri-arrow-right-line text-xl relative"></i>
+                </a>
+                <button class=" h-12 bg-[#ffffff] text-black rounded-lg font-semibold px-8 py-1 ">Sign
+                    up for GitHub
+                </button>
+
+            </div>
+        </div>
+        <img src="https://github.githubassets.com/assets/hero-mobile-7163f4f5de41.webp" alt=""
+            class="absolute top-0 left-0 md:hidden lg:hidden">
         <!-- home -->
-        <section id="section-0" class="w-full overflow-hidden px-2 relative">
+        <section id="section-0" class="w-full overflow-hidden px-2 relative lg:px-0">
             <div class="hero w-full relative ">
-                <!-- <img src="https://github.githubassets.com/assets/hero-desktop-a38b0fd77b6c.webp" alt="" class="absolute -right-[55%] top-0 -z-10 object-cover h-full "> -->
-                <nav class="w-full h-20 relative z-30 hidden">
+                <img src="https://github.githubassets.com/assets/hero-desktop-a38b0fd77b6c.webp" alt=""
+                    class="absolute hidden left-[62%] top-[0%] border -z-10 object-cover h-full scale-90  md:object-left md:block lg:block">
+
+                <nav class="w-full h-16 relative z-30 hidden lg:block px-4">
                     <div class="w-full h-full flex justify-between items-center">
                         <div class="left-part flex h-full items-center justify-start gap-5">
                             <svg height="32" fill="var(--tc)" aria-hidden="true" viewBox="0 0 16 16" version="1.1"
@@ -477,7 +506,7 @@
                             <div
                                 class="input w-80 flex items-center gap-1 border-[1px] border-[#57606A] bg-[#293041] px-2 py-[3px] rounded-lg ">
                                 <i class="ri-search-line text-[--p]"></i>
-                                <input type="text" placeholder="Search or jump to.."
+                                <input type="text" placeholder="Search or jump to..."
                                     class="h-full w-full p-1 bg-transparent focus:border-none focus:outline-none text-sm">
                                 <span
                                     class="border-[1px] border-[#57606A] px-[6px] rounded-md text-[--p] text-sm">/</span>
@@ -494,8 +523,8 @@
                     </div>
 
                 </nav>
-                <div class="w-full relative border pt-[70vw] md:pt-[18vw] px-2 flex ">
-                    <div id="progress" class="w-1/12 border pt-7 flex flex-col items-center shrink-0 ">
+                <div class="w-full relative border pt-[70vw] md:pt-[18vw] px-2 flex lg:px-[7.8vw] lg:pt-[10vw]">
+                    <div id="progress" class="w-1/12 border pt-7 flex flex-col items-center shrink-0 lg:pt-0">
                         <div class="p-1 border-[2px] border-[--p] rounded-full"></div>
                         <div
                             class="progress-bar bar-1 h-[100%] w-[2px] bg-gradient-to-b from-transparent to-40% to-[--homebar] md:h-[80%]">
@@ -515,16 +544,16 @@
                         <div class="progress-bar h-[100%] w-[2px] bg-gradient-to-b from-[--homebar] to-green-500 ">
                         </div>
                     </div>
-                    <div id="content" class="w-11/12 border p-1">
+                    <div id="content" class="w-11/12 border p-1 ">
                         <h1
-                            class="text-[15vw] leading-[15vw] mb-5 tracking-wide font-semibold  md:text-[10vw] md:w-[60%] md:leading-[9vw]">
+                            class="text-[15vw] leading-[15vw] mb-5 tracking-wide font-semibold md:text-[10vw] md:w-[60%] md:leading-[9vw] lg:text-[6vw] lg:w-full lg:leading-[6vw]">
                             Let's build from here
                         </h1>
-                        <p class="mt-4 text-[5.8vw] md:text-[2.5vw]">
+                        <p class="mt-4 text-[5.8vw] md:text-[2.5vw] lg:text-[1.6vw] lg:mt-3">
                             The world's leading AI-powered developer platform.
                         </p>
                         <div id="signup" class="w-full flex mt-5 gap-3 flex-wrap flex-shrink-0 md:mt-24 md:gap-[16px]">
-                            <div class="flex w-full flex-col gap-4 md:flex-row md:w-[55%] md:gap-0">
+                            <div class="flex w-full flex-col gap-4 md:flex-row md:w-[55%] md:gap-0 lg:w-[42%]">
                                 <input type="text" placeholder="Email address"
                                     class="w-full h-12 rounded-lg p-5 text-black md:w-1/2 md:rounded-tr-none md:rounded-br-none">
                                 <button
@@ -537,12 +566,15 @@
                                 a free enterprise trail <i class="ri-arrow-right-line text-xl relative"></i>
                             </a>
                         </div>
-                        <div class="w-full py-20 md:py-28">
-                            <h4 class="text-[--p] text-[4.7vw] leading-tight mb-10 w-[80%] md:text-[2vw]">
+                        <div class="w-full py-20 md:py-28 lg:py-24">
+                            <h4
+                                class="text-[--p] text-[4.7vw] leading-tight mb-10 w-[80%] md:text-[2vw] lg:text-[1.4vw] ">
                                 Trusted by the world's leading organizations
-                                <span class="px-1 bg-blue-600 border-black border-[1.5px] text-white">↘</span>
+                                <span
+                                    class="px-1 bg-blue-600 border-black border-[1.5px] text-white rounded-md">↘</span>
                             </h4>
-                            <div id="sponsers" class="w-full flex flex-wrap gap-5 items-center justify-evenly md:gap-1">
+                            <div id="sponsers"
+                                class="w-full flex flex-wrap gap-5 items-center justify-evenly md:gap-1 lg:justify-between lg:pr-[5vw]">
                                 <img class="sponsors" src="https://github.githubassets.com/assets/3m-0151c2fda0ce.svg"
                                     alt="">
                                 <img class="sponsors" src="https://github.githubassets.com/assets/kpmg-c249f20c5173.svg"
@@ -563,7 +595,8 @@
             </div>
         </section>
         <!-- Productivity -->
-        <section id="section-1" class="section w-full">
+        <section id="section-1" class="section px-4 w-full relative lg:px-[7.8vw]">
+            <img src="https://github.githubassets.com/assets/shape-0-df97fa6b0c27.svg" alt="" class="product-png absolute top-0 -right-1/4 w-1/2 hidden md:block lg:block lg:-right-[15%] lg:w-[45%]">
             <div class="w-full border flex">
                 <div id="progress" class="w-1/12 border flex flex-col items-center shrink-0">
                     <div class="progress-point size-16 shrink-0 my-2 relative">
@@ -581,9 +614,10 @@
                     </div>
                     <div class="progress-bar h-[100%] w-[2px] bg-gradient-to-b from-[--probar] to-transparent "></div>
                 </div>
-                <div id="content" class="w-11/12 h-full border pt-1 pb-24">
-                    <h2 class="text-white text-[6vw] my-5 md:text-[3vw]">Productivity</h2>
-                    <h3 class=" text-[8vw] leading-[8vw] md:text-[5vw] md:leading-[5vw] ">
+                <div id="content" class="w-11/12 h-full border pt-1 pb-24 md:pb-32 lg:pb-32">
+                    <h2 class="text-white text-[6vw] my-5 md:text-[3vw] lg:text-[1.6vw]">Productivity</h2>
+                    <h3
+                        class=" text-[8vw] leading-[8vw] md:text-[5vw] md:leading-[5vw] lg:text-[3.1vw] lg:leading-[3.3vw] lg:w-[80%] ">
                         <span class="text-green-500">Accelerate innovation</span> <br>
                         Our AI-powered platform increases the pace of software development.
                     </h3>
@@ -602,35 +636,41 @@
                 </div>
                 <div id="content" class="w-11/12 h-full border relative ">
                     <div
-                        class="size-[50vw] bg-purple-500 rounded-full blur-[100px] opacity-70 hidden md:block md:absolute md:-top-[250px] md:right-[80px]">
+                        class="size-[50vw] bg-purple-500 rounded-full blur-[100px] opacity-70 hidden md:block md:absolute md:-top-[250px] md:right-[80px] lg:size-[30vw]">
                     </div>
-                    <div class="w-3/5 border absolute -top-[200px] right-[20px] z-30 md:w-[45%] md:right-[0]">
+                    <div
+                        class="w-3/5 border absolute -top-[200px] right-[20px] z-30 md:w-[45%] md:right-[0] lg:right-[60px] lg:w-[41%] lg:-top-[400px]">
                         <img src="https://github.githubassets.com/assets/illu-copilot-sidebar-3d2efb504577.png" alt=""
                             class="w-full rounded-lg z-30 ">
                     </div>
 
                     <img src="https://github.githubassets.com/assets/git-branch-productivity-c304b83d09c7.svg" alt=""
-                        class="hidden absolute bottom-[10px] -left-[40px] scale-90 md:block ">
-                    <div class="para-1 pt-20 w-full flex flex-col md:pl-14">
-                        <h2 class="text-[5.5vw] text-[--p] mb-4 md:text-[2.5vw] md:w-[44%]">
+                        class="hidden absolute bottom-[10px] -left-[40px] scale-90 md:block lg:-left-[60px]">
+                    <div class="para-1 pt-20 w-full flex flex-col md:pl-14 lg:pl-9">
+                        <h2
+                            class="text-[5.5vw] text-[--p] mb-4 md:text-[2.5vw] md:w-[44%] lg:text-[1.6vw] lg:leading-[2vw]">
                             <em class="text-white font-semibold">GitHub Copilot</em>
                             empowers developers to complete tasks 55% faster with contextualized AI coding assistance
                             across workflows.
                         </h2>
-                        <a href="" class="hover-btm-line shrink-0 text-[4.5vw] md:text-[2.5vw]">Explore GitHub Copilot
+                        <a href="" class="hover-btm-line shrink-0 text-[4.5vw] md:text-[2.5vw] lg:text-[1.4vw]">Explore
+                            GitHub Copilot
                             <i class="ri-arrow-right-line text-[22px]"></i></a>
                     </div>
-                    <div class="para-2 py-24 w-full border md:pl-14 md:w-[60%] md:mt-10">
+                    <div class="para-2 py-24 w-full border md:pl-14 md:w-[60%] md:mt-10 lg:pl-9 lg:w-[40%] lg:pt-28">
                         <span
-                            class="text-green-500 border-green-500 border-[1px] inline-block px-2  rounded-xl text-[3.2vw] md:text-[2vw]">
+                            class="text-green-500 border-green-500 border-[1px] inline-block px-2  rounded-xl text-[3.2vw] md:text-[2vw] lg:text-[0.8vw]">
                             Did you know?
                         </span>
-                        <h3 class="text-green-500 text-[11vw] font-semibold md:text-[7vw]">22% increase</h3>
-                        <h4 class="text-[5.8vw] font-medium w-full mb-[20px] md:text-[2.5vw]">in developer productivity
+                        <h3 class="text-green-500 text-[11vw] font-semibold md:text-[7vw] lg:text-[4.5vw]">22% increase
+                        </h3>
+                        <h4
+                            class="text-[5.8vw] font-medium w-full mb-[20px] md:text-[2.5vw] lg:text-[1.6vw] lg:leading-[2vw]">
+                            in developer productivity
                             after three
                             years with GitHub
                         </h4>
-                        <a href="" class="hover-btm-line text-[4.8vw] md:text-[2.5vw]">
+                        <a href="" class="hover-btm-line text-[4.8vw] md:text-[2.5vw] lg:text-[1.4vw]">
                             Read the report
                             <i class="ri-arrow-right-line text-xl"></i>
                         </a>
@@ -638,14 +678,18 @@
                 </div>
             </div>
             <div id="card-container" class="w-full border flex flex-wrap gap-8">
+                <!-- <img src="" alt=""> -->
                 <div
                     class="card-1 w-full rounded-2xl overflow-hidden border bg-[#161B22] flex flex-col md:flex-2 md:flex-row">
-                    <div class="text-content flex flex-col justify-between p-8  md:pr-[70px]">
-                        <p class="text-[--p] text-[5.5vw] font-semibold mb-5 md:text-[2.5vw]">
+                    <div class="text-content flex flex-col justify-between p-8  md:pr-[70px] lg:p-16 lg:pr-[100px]">
+                        <p
+                            class="text-[--p] text-[5.5vw] font-semibold mb-5 md:text-[2.5vw] lg:text-[1.6vw] lg:leading-[2vw]">
                             <span class="text-white">GitHub Actions </span>
                             automates your build, test, and deployment workflow with simple and secure CI/CD.
                         </p>
-                        <a href="" class="hover-btm-line text-[4.6vw] font-semibold md:text-[2.5vw]">Discover GitHub
+                        <a href=""
+                            class="hover-btm-line text-[4.6vw] font-semibold md:text-[2.5vw] lg:text-[1.4vw]">Discover
+                            GitHub
                             Actions
                             <i class="ri-arrow-right-line text-xl relative"></i>
                         </a>
@@ -654,13 +698,15 @@
                         class="w-full mt-3 md:w-1/2">
                 </div>
                 <div class="card-2 w-full rounded-2xl overflow-hidden border bg-[#161B22]  md:flex-1">
-                    <div class="text-content flex flex-col justify-between p-8">
-                        <p class="text-[--p] text-[5.5vw] font-semibold mb-5 md:text-[2.5vw] md:w-[90%]">
+                    <div class="text-content flex flex-col justify-between p-8 lg:p-16 lg:pr-[100px]">
+                        <p
+                            class="text-[--p] text-[5.5vw] font-semibold mb-5 md:text-[2.5vw] md:w-[90%] lg:text-[1.6vw] lg:leading-[2vw] ">
                             <span class="text-white">GitHub Codespaces </span>
                             offers a complete dev environment in seconds. Code, build,test, and open pull requests from
                             any repo.
                         </p>
-                        <a href="" class="hover-btm-line text-[4.6vw] font-semibold md:text-[2.5vw] md:w-[60%]">
+                        <a href=""
+                            class="hover-btm-line text-[4.6vw] font-semibold md:text-[2.5vw] md:w-[60%] lg:text-[1.4vw] lg:w-full ">
                             Check out GitHub Codespaces
                             <i class="ri-arrow-right-line text-xl relative"></i>
                         </a>
@@ -670,12 +716,15 @@
                 </div>
                 <div
                     class="card-3 w-full rounded-2xl overflow-hidden border bg-[#161B22] md:flex-1 md:flex md:flex-col md:justify-between ">
-                    <div class="text-content flex flex-col justify-between p-8 ">
-                        <p class="text-[--p] text-[5.5vw] font-semibold mb-5 md:text-[2.5vw] md:w-[90%]">
+                    <div class="text-content flex flex-col justify-between p-8 lg:p-16 lg:pr-[100px]">
+                        <p
+                            class="text-[--p] text-[5.5vw] font-semibold mb-5 md:text-[2.5vw] md:w-[90%] lg:text-[1.6vw] lg:leading-[2vw]">
                             <span class="text-white">GitHub Mobile </span>
                             fits your projects in your pocket, so you never miss a beat while on the go.
                         </p>
-                        <a href="" class="hover-btm-line text-[4.6vw] font-semibold md:text-[2.5vw]">Download GitHub
+                        <a href=""
+                            class="hover-btm-line text-[4.6vw] font-semibold md:text-[2.5vw] lg:text-[1.4vw] lg:w-full ">Download
+                            GitHub
                             Mobile <i class="ri-arrow-right-line text-xl relative"></i></a>
                     </div>
                     <img src="https://github.githubassets.com/assets/illu-mobile-4d51d19f769e.png?width=1208&format=webpll"
@@ -684,8 +733,8 @@
             </div>
         </section>
         <!-- Application security -->
-        <section id="section-2" class="section w-full relative overflow-hidden">
-            <!-- <img src="https://github.githubassets.com/assets/shape-2-f30dcc9bd35c.svg" alt="" class="absolute top-[200px] -right-[20%]"> -->
+        <section id="section-2" class="section px-4 w-full relative overflow-hidden lg:px-[7.8vw]">
+            <img src="https://github.githubassets.com/assets/shape-2-f30dcc9bd35c.svg" alt="" class="absolute top-[200px] -right-[22%] -z-10 w-2/3 hidden md:block lg:block lg:w-[50%] lg:-right-[10%]">
             <div class="w-full border flex">
                 <div class="w-full border flex">
                     <div id="progress" class="w-1/12 border flex flex-col items-center shrink-0">
@@ -709,20 +758,22 @@
                         </div>
                     </div>
                     <div id="content" class="w-11/12 h-full border pt-44 pb-12 px-1 md:pb-28">
-                        <h2 class="text-white text-[6vw] my-4 md:text-[3vw] md:my-6">Application security</h2>
-                        <h3 class=" text-[8vw] leading-[8.5vw] md:text-[4.5vw] md:leading-[5.5vw]">
+                        <h2 class="text-white text-[6vw] my-4 md:text-[3vw] md:my-6 lg:text-[1.6vw]">Application
+                            security</h2>
+                        <h3
+                            class=" text-[8vw] leading-[8.5vw] md:text-[4.5vw] md:leading-[5.5vw] lg:text-[3vw] lg:leading-[3.5vw] lg:w-[60%]">
                             <span class="text-[--app]">Empower developers</span><br>
                             With GitHub, you can secure code in minutes.
                         </h3>
                     </div>
                 </div>
             </div>
-            <div class="steps p-8 mx-2 bg-[#161B22] rounded-lg border z-20">
+            <div class="steps p-8 mx-2 bg-[#161B22] rounded-lg border z-20 lg:w-full lg:mx-0">
                 <h2 class="text-[--p]">cmake.yml</h2>
                 <h3 class="text-[--p]">on:push</h3>
-                <div class="w-full md:flex ">
+                <div class="w-full md:flex border lg:px-[8vw] lg:py-[6vw]">
                     <div
-                        class="build flex p-5 mt-20 bg-[--build] rounded-lg md:w-1/2 md:items-center md:h-20 md:justify-between md:mt-8">
+                        class="build flex p-5 mt-20 bg-[--build] rounded-lg md:w-1/2 md:items-center md:h-20 md:justify-between md:mt-8 lg:h-[75px]">
                         <div class="flex">
                             <svg aria-hidden="true" fill="green" height="24" viewBox="0 0 24 24" version="1.1"
                                 width="24" data-view-component="true"
@@ -731,12 +782,13 @@
                                     d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z">
                                 </path>
                             </svg>
-                            <h2 class="text-[4.6vw] md:text-[2.2vw]">Build</h2>
+                            <h2 class="text-[4.6vw] md:text-[2.2vw] lg:text-[1.2vw]">Build</h2>
                         </div>
                         <h3 class="hidden md:block text-[--p]">1m 21s</h3>
                     </div>
                     <div class="connector -mt-1 pl-10 z-10 md:pl-0 md:-mx-1 md:mt-[70px]">
-                        <div class="w-[2px] h-16  bg-[white] flex flex-col justify-between items-center md:w-16 md:h-[2px] md:flex-row">
+                        <div
+                            class="w-[2px] h-16  bg-[white] flex flex-col justify-between items-center md:w-16 md:h-[2px] md:flex-row">
                             <div class="size-3 rounded-full  bg-[white]"></div>
                             <div class="size-3 rounded-full  bg-[white] z-10"></div>
                         </div>
@@ -745,42 +797,42 @@
                         <div class="px-5 py-2 absolute -top-8 left-0  bg-[--build] rounded-tl-lg rounded-tr-lg">
                             <h2>Steps</h2>
                         </div>
-                        <div class="build flex py-[10px] rounded-lg md:justify-between">
+                        <div class="build flex py-[5px] rounded-lg md:justify-between">
                             <div class="flex">
                                 <svg aria-hidden="true" fill="green" height="24" viewBox="0 0 24 24" version="1.1"
-                                width="24" data-view-component="true"
-                                class="octicon octicon-check-circle-fill color-fg-success mr-2">
-                                <path
-                                    d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z">
-                                </path>
-                            </svg>
-                            <h2 class="text-lg">initialize CodeQL</h2>
+                                    width="24" data-view-component="true"
+                                    class="octicon octicon-check-circle-fill color-fg-success mr-2">
+                                    <path
+                                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z">
+                                    </path>
+                                </svg>
+                                <h2 class="text-lg">initialize CodeQL</h2>
                             </div>
                             <h3 class="hidden md:block text-[--p]">1m 42s</h3>
                         </div>
-                        <div class="build flex py-[10px] rounded-lg md:justify-between">
+                        <div class="build flex py-[5px] rounded-lg md:justify-between">
                             <div class="flex">
                                 <svg aria-hidden="true" fill="green" height="24" viewBox="0 0 24 24" version="1.1"
-                                width="24" data-view-component="true"
-                                class="octicon octicon-check-circle-fill color-fg-success mr-2">
-                                <path
-                                    d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z">
-                                </path>
-                            </svg>
-                            <h2 class="text-lg">Autobuild</h2>
+                                    width="24" data-view-component="true"
+                                    class="octicon octicon-check-circle-fill color-fg-success mr-2">
+                                    <path
+                                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z">
+                                    </path>
+                                </svg>
+                                <h2 class="text-lg">Autobuild</h2>
                             </div>
                             <h3 class="hidden md:block text-[--p]">1m 24s</h3>
                         </div>
-                        <div class="build flex py-[10px] rounded-lg">
+                        <div class="build flex py-[5px] rounded-lg justify-between">
                             <div class="flex items-center">
                                 <svg aria-hidden="true" fill="green" height="24" viewBox="0 0 24 24" version="1.1"
-                                width="24" data-view-component="true"
-                                class="octicon octicon-check-circle-fill color-fg-success mr-2">
-                                <path
-                                    d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z">
-                                </path>
-                            </svg>
-                            <h2 class="text-lg md:w-2/3">Perform CodeQL Analyses</h2>
+                                    width="24" data-view-component="true"
+                                    class="octicon octicon-check-circle-fill color-fg-success mr-2">
+                                    <path
+                                        d="M1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12Zm16.28-2.72a.751.751 0 0 0-.018-1.042.751.751 0 0 0-1.042-.018l-5.97 5.97-2.47-2.47a.751.751 0 0 0-1.042.018.751.751 0 0 0-.018 1.042l3 3a.75.75 0 0 0 1.06 0Z">
+                                    </path>
+                                </svg>
+                                <h2 class="text-lg md:w-2/3 lg:w-full">Perform CodeQL Analyses</h2>
                             </div>
                             <h3 class="hidden md:block text-[--p]">1m 36s</h3>
                         </div>
@@ -794,54 +846,68 @@
                     </div>
                 </div>
                 <div id="content" class="w-11/12 h-full border relative md:pl-10">
-                    <div class="hidden md:block size-[500px] bg-sky-700 rounded-full blur-[100px] opacity-70 -z-10  absolute -top-[350px] right-[50px]"> </div>
-                    <div class="w-[90%] border absolute -top-[30px] -right-[40px] z-30 md:w-[50%]">
-                        <img src="https://github.githubassets.com/assets/illu-ghas-list-84af1f1ce2b8.png" alt=""  class="rounded-lg ">
+                    <div
+                        class="hidden md:block size-[500px] bg-sky-700 rounded-full blur-[100px] opacity-70 -z-10  absolute -top-[350px] right-[50px]">
+                    </div>
+                    <div class="w-[90%] border absolute -top-[30px] -right-[40px] z-30 md:w-[50%] lg:w-[47%]">
+                        <img src="https://github.githubassets.com/assets/illu-ghas-list-84af1f1ce2b8.png" alt=""
+                            class="rounded-lg ">
                     </div>
 
-                    <img src="https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg" alt=""  class="hidden md:block absolute bottom-0 -left-[40px] scale-90">
+                    <img src="https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg" alt=""
+                        class="hidden md:block absolute bottom-0 -left-[40px] scale-90 lg:-left-[60px]">
 
-                    <div class="para-1 pt-40 w-full flex flex-col md border md:w-[45%]">
-                        <h2 class="text-[6vw] leading-[7vw] text-[--p] mb-4 md:text-[2.8vw] md:leading-[3.5vw]">
+                    <div class="para-1 pt-40 w-full flex flex-col md border md:w-[45%] lg:w-[46%] lg:pt-32">
+                        <h2
+                            class="text-[6vw] leading-[7vw] text-[--p] mb-4 md:text-[2.8vw] md:leading-[3.5vw] lg:text-[1.6vw] lg:leading-[2vw]">
                             <em class="text-white ">GitHub Advanced Security </em>
                             enables you to find and fix vulnerabilities with ease and ship secure code quickly.
                         </h2>
-                        <a href="" class="hover-btm-line font-semibold text-[4.8vw] md:text-[2.5vw]">Dive into GitHub Advanced Security
+                        <a href=""
+                            class="hover-btm-line font-semibold text-[4.8vw] md:text-[2.5vw] lg:text-[1.4vw]">Dive into
+                            GitHub Advanced Security
                             <i class="ri-arrow-right-line text-[22px] relative"></i></a>
                     </div>
-                    <div class="para-2 mt-10 py-24 md:pt-32 md:pb-40 border ">
+                    <div class="para-2 mt-10 py-24 md:pt-32 md:pb-40 border lg:mt-8">
                         <span
-                            class="text-[--app] border-[--app] border-[1px] inline-block px-2 rounded-xl text-[3.5vw] md:text-[2vw]">
+                            class="text-[--app] border-[--app] border-[1px] inline-block px-2 rounded-xl text-[3.5vw] md:text-[2vw] lg:text-[0.8vw] ">
                             Did you know?
                         </span>
-                        <h3 class="text-[--app] text-[11vw] font-semibold md:text-[6vw]">7x faster</h3>
-                        <h4 class="text-[5.8vw] w-[80%] md:text-[2.5vw]">vulnerability fixes with GitHub<sup>1</sup>
+                        <h3 class="text-[--app] text-[11vw] font-semibold md:text-[6vw] lg:text-[4.5vw]">7x faster</h3>
+                        <h4 class="text-[5.8vw] w-[80%] md:text-[2.5vw] lg:text-[1.6vw]">vulnerability fixes with
+                            GitHub<sup>1</sup>
                         </h4>
 
                     </div>
                 </div>
             </div>
             <div id="card-container" class="w-full border flex flex-wrap gap-8">
-                <div class="card-1 w-full rounded-2xl overflow-hidden border bg-[#161B22] flex flex-col md:flex-2 md:flex-row">
-                    <div class="text-content flex flex-col justify-between p-8 md:w-45%">
-                        <p class="text-[--p] text-[5.6vw] font-semibold mb-5 md:text-[2.6vw]">
+                <div
+                    class="card-1 w-full rounded-2xl overflow-hidden border bg-[#161B22] flex flex-col md:flex-2 md:flex-row">
+                    <div class="text-content flex flex-col justify-between p-8 md:w-45% lg:p-16">
+                        <p
+                            class="text-[--p] text-[5.6vw] font-semibold mb-5 md:text-[2.6vw] lg:text-[1.6vw]  lg:leading-[2vw] lg:pr-[70px]">
                             <span class="text-white">Code scanning </span>
                             is our code analysis tool that helps you remediate issues in your code.
                         </p>
-                        <a href="" class="hover-btm-line font-semibold text-[4.6vw] md:text-[2.6vw]">Download the latest SAST ebook
+                        <a href=""
+                            class="hover-btm-line font-semibold text-[4.6vw] md:text-[2.6vw] lg:text-[1.3vw]">Download
+                            the latest SAST ebook
                             <i class="ri-arrow-right-line text-xl relative"></i>
                         </a>
                     </div>
                     <img src="https://github.githubassets.com/assets/illu-code-scanning-fc9dfb212aa3.png?width=644&format=webpll"
                         class="w-full mt-3 md:w-1/2">
                 </div>
-                <div class="card-2 w-full rounded-2xl overflow-hidden border bg-[#161B22] md:flex-1 md:flex md:flex-col md:justify-between">
-                    <div class="text-content p-8 flex flex-col justify-between">
-                        <p class="text-[--p] text-[5.6vw] font-semibold leading-[7vw] mb-5 md:text-[2.6vw] md:leading-7">
+                <div
+                    class="card-2 w-full rounded-2xl overflow-hidden border bg-[#161B22] md:flex-1 md:flex md:flex-col md:justify-between">
+                    <div class="text-content p-8 flex flex-col justify-between lg:p-16">
+                        <p
+                            class="text-[--p] text-[5.6vw] font-semibold leading-[7vw] mb-5 md:text-[2.6vw] md:leading-7 lg:text-[1.6vw]  lg:leading-[2vw] lg:pr-[70px]">
                             <span class="text-white">Dependabot </span>
                             makes it easy to find and fix vulnerable dependencies in your supply chain
                         </p>
-                        <a href="" class="hover-btm-line font-semibold text-[4.6vw] md:text-[2.5vw]">
+                        <a href="" class="hover-btm-line font-semibold text-[4.6vw] md:text-[2.5vw] lg:text-[1.3vw]">
                             Explore Dependabot
                             <i class="ri-arrow-right-line text-xl relative"></i>
                         </a>
@@ -849,15 +915,18 @@
                     <img src="https://github.githubassets.com/assets/illu-dependabot-d98c73cc6724.png?width=724&format=webpll"
                         class="w-full mt-3">
                 </div>
-                <div class="card-3 w-full rounded-2xl overflow-hidden border bg-[#161B22] md:flex-1 md:flex md:flex-col md:justify-between">
-                    <div class="text-content p-8 flex flex-col justify-between">
-                        <p class="text-[--p] text-[5.6vw] font-semibold leading-[7vw] mb-5 md:text-[2.6vw] md:leading-7">
+                <div
+                    class="card-3 w-full rounded-2xl overflow-hidden border bg-[#161B22] md:flex-1 md:flex md:flex-col md:justify-between">
+                    <div class="text-content p-8 flex flex-col justify-between lg:p-16">
+                        <p
+                            class="text-[--p] text-[5.6vw] font-semibold leading-[7vw] mb-5 md:text-[2.6vw] md:leading-7 lg:text-[1.6vw]  lg:leading-[2vw] lg:pr-[70px]">
                             <span class="text-white">Secret scanning </span>
                             automatically looks for partner patterns and prevents fraudulent use of accidentally
                             committed secrets.
                         </p>
-                        <a href="" class="hover-btm-line font-semibold text-[4.6vw] md:text-[2.5vw]">Read about secret scanning<i
-                                class="ri-arrow-right-line text-xl relative"></i>
+                        <a href=""
+                            class="hover-btm-line font-semibold text-[4.6vw] md:text-[2.5vw] lg:text-[1.3vw]">Read about
+                            secret scanning<i class="ri-arrow-right-line text-xl relative"></i>
                         </a>
                     </div>
                     <img src="https://github.githubassets.com/assets/illu-secret-scanning-2-88fb429376d6.png?width=724&format=webpll"
@@ -866,12 +935,13 @@
             </div>
         </section>
         <!-- Collaboration -->
-        <section id="section-2" class="section w-full relative overflow-hidden">
-            <!-- <img src="https://github.githubassets.com/assets/shape-3-9e542b5c31b8.svg" alt="" class="absolute top-[200px] -right-[8%]"> -->
+        <section id="section-2" class="section px-4 w-full relative overflow-hidden lg:px-[7.8vw]">
+            <img src="https://github.githubassets.com/assets/shape-3-9e542b5c31b8.svg" alt="" class="absolute top-[150px] -right-[15%] w-[45%] hidden md:block lg:block lg:w-[35%] lg:-right-[5%]">
             <div class="w-full border flex">
                 <div class="w-full border flex ">
                     <div id="progress" class="w-1/12 border flex flex-col items-center shrink-0">
-                        <div class="progress-bar h-[70%] w-[2px] bg-gradient-to-b to-[--cotnbar] from-transparent md:h-[60%]">
+                        <div
+                            class="progress-bar h-[70%] w-[2px] bg-gradient-to-b to-[--cotnbar] from-transparent md:h-[60%]">
                         </div>
                         <div class="progress-point size-16 shrink-0 my-2 relative">
                             <div class="blur-point w-full h-full blur-[20px]"
@@ -889,9 +959,10 @@
                         <div class="progress-bar h-[100%] w-[2px] bg-gradient-to-b from-[--cotnbar] to-transparent ">
                         </div>
                     </div>
-                    <div id="content" class="w-11/12 h-full border pt-40 pb-16 px-1 md:pb-32">
-                        <h2 class="text-white text-[6vw] my-4 md:text-[3vw]">Collaboration</h2>
-                        <h3 class=" text-[8vw] leading-[8.5vw] md:text-[4.8vw] md:leading-[6vw]">
+                    <div id="content" class="w-11/12 h-full border pt-40 pb-16 px-1 md:pb-32 lg:w-[70%]">
+                        <h2 class="text-white text-[6vw] my-4 md:text-[3vw] lg:text-[1.6vw]">Collaboration</h2>
+                        <h3
+                            class=" text-[8vw] leading-[8.5vw] md:text-[4.8vw] md:leading-[6vw] lg:text-[3vw] lg:leading-[3vw]">
                             <span class="text-[--cotn]">Supercharge collaboration</span><br>
                             GitHub helps your teams work more efficiently together.
                         </h3>
@@ -909,29 +980,37 @@
                     </div>
                 </div>
                 <div id="content" class="w-11/12 h-full border relative pl-2">
-                    <div class="hidden md:block size-[400px] bg-[--cotnbar] rounded-full blur-[100px] opacity-70 absolute -top-[300px] -right-[10px]"> </div>
-                    <div class="w-[90%] absolute -top-[90px] -right-[10px] md:w-[43%] md:-top-[50px]">
+                    <div
+                        class="hidden md:block size-[400px] bg-purple-900 rounded-full blur-[100px] opacity-70 absolute -top-[300px] -right-[10px] lg:size-[500px] lg:right-[30px] lg:-top-[200px] ">
+                    </div>
+                    <div class="w-[90%] absolute -top-[90px] -right-[10px] md:w-[43%] md:-top-[50px] lg:-top-[150px]">
                         <img src="https://github.githubassets.com/assets/illu-projects-2-26077f1dd188.png" alt=""
                             class="scale-110 absolute top-[5%] right-[0%] rounded-lg z-30">
 
                     </div>
 
                     <img src="https://github.githubassets.com/assets/git-branch-collaboration-2-e46b1fb1d363.svg" alt=""
-                        class="hidden md:block absolute bottom-0 -left-[40px] scale-90">
-                    <div class="para-1 pt-40 w-full flex flex-col border md:w-[55%] md:pl-7 md:pt-20">
-                        <h2 class="text-[5.6vw] leading-[7vw] text-[--p] mb-4 md:text-[3vw] md:leading-7">
+                        class="hidden md:block absolute bottom-0 -left-[40px] scale-90 lg:-left-[60px]">
+                    <div class="para-1 pt-40 w-full flex flex-col border md:w-[55%] md:pl-7 md:pt-20 lg:w-[50%]">
+                        <h2
+                            class="text-[5.6vw] leading-[7vw] text-[--p] mb-4 md:text-[3vw] md:leading-7 lg:text-[1.6vw]">
                             <em class="text-white ">GitHub Issues and GitHub Projects </em>
                             supply project management tools that adapt to your team alongside your code.
                         </h2>
-                        <a href="" class="hover-btm-line font-semibold text-[4.8vw] md:text-[2.5vw] md:w-[70%]">Get start with GitHub Issues
+                        <a href=""
+                            class="hover-btm-line font-semibold text-[4.8vw] md:text-[2.5vw] md:w-[70%] lg:text-[1.3vw]">Get
+                            start with GitHub Issues
                             <i class="ri-arrow-right-line text-[22px] relative"></i></a>
                     </div>
-                    <div class="para-2 mt-10 pt-16 pb-20 md:pl-7 md:mt-0 md:py-36 border">
-                        <span class="text-[--cotn] border-[--cotn] border-[1px] inline-block px-2  rounded-xl text-sm md:text-[2vw]">
+                    <div class="para-2 mt-10 pt-16 pb-20 md:pl-7 md:mt-0 md:py-36 border lg:mt-16">
+                        <span
+                            class="text-[--cotn] border-[--cotn] border-[1px] inline-block px-2  rounded-xl text-sm md:text-[2vw] lg:text-[0.8vw]">
                             Did you know?
                         </span>
-                        <h3 class="text-[--cotn] text-[11vw] font-semibold md:text-[6vw]">80%</h3>
-                        <h4 class="text-[5.8vw] leading-[8vw] font-medium md:text-[2.8vw] md:w-[60%] md:leading-7">reduction in onboarding time with
+                        <h3 class="text-[--cotn] text-[11vw] font-semibold md:text-[6vw] lg:text-[5vw]">80%</h3>
+                        <h4
+                            class="text-[5.8vw] leading-[8vw] font-medium md:text-[2.8vw] md:w-[60%] md:leading-7 lg:text-[1.6vw] lg:w-[25%]">
+                            reduction in onboarding time with
                             GitHub<sup>2</sup>
                         </h4>
                     </div>
@@ -939,13 +1018,16 @@
             </div>
             <div id="card-container" class="w-full border flex flex-wrap gap-8">
 
-                <div class="card-1 w-full rounded-2xl overflow-hidden border bg-[#161B22] md:flex-1 md:flex md:flex-col md:justify-between">
-                    <div class="text-content p-8 flex flex-col justify-between">
-                        <p class="text-[--p] text-[5.8vw] leading-[7.5vw] mb-5 md:text-[2.8vw] md:leading-7">
+                <div
+                    class="card-1 w-full rounded-2xl overflow-hidden border bg-[#161B22] md:flex-1 md:flex md:flex-col md:justify-between pr-[50px]">
+                    <div class="text-content p-8 flex flex-col justify-between lg:p-16">
+                        <p
+                            class="text-[--p] text-[5.8vw] leading-[7.5vw] mb-5 md:text-[2.8vw] md:leading-7 lg:text-[1.6vw]">
                             <span class="text-white">GitHub Discussions </span>
                             creates space to ask questions and have open-ended conversations.
                         </p>
-                        <a href="" class="hover-btm-line text-[4.7vw] font-semibold md:text-[2.5vw] md:w-2/3">
+                        <a href=""
+                            class="hover-btm-line text-[4.7vw] font-semibold md:text-[2.5vw] md:w-2/3 lg:text-[1.4vw]">
                             Jump into GitHub Discussions
                             <i class="ri-arrow-right-line text-xl relative"></i>
                         </a>
@@ -953,26 +1035,31 @@
                     <img src="https://github.githubassets.com/assets/illu-discussions-2-b915a6dd867e.png?width=604&format=webpll"
                         class="w-full mt-3">
                 </div>
-                <div class="card-2 w-full rounded-2xl overflow-hidden border bg-[#161B22] md:flex-1 md:flex md:flex-col md:justify-between">
-                    <div class="text-content p-8 flex flex-col justify-between">
-                        <p class="text-[--p] text-[5.8vw] leading-[7.5vw] mb-5 md:text-[2.8vw] md:leading-7">
+                <div
+                    class="card-2 w-full rounded-2xl overflow-hidden border bg-[#161B22] md:flex-1 md:flex md:flex-col md:justify-between pr-[50px]">
+                    <div class="text-content p-8 flex flex-col justify-between lg:p-16">
+                        <p
+                            class="text-[--p] text-[5.8vw] leading-[7.5vw] mb-5 md:text-[2.8vw] md:leading-7 lg:text-[1.6vw]">
                             <span class="text-white">Pull requests </span>
                             allow real-time communication and collaboration about code changes.
                         </p>
-                        <a href="" class="hover-btm-line text-[4.7vw] font-semibold md:text-[2.5vw] ">Read about secret scanning<i
-                                class="ri-arrow-right-line text-xl relative"></i>
+                        <a href=""
+                            class="hover-btm-line text-[4.7vw] font-semibold md:text-[2.5vw]  lg:text-[1.4vw]">Read
+                            about secret scanning<i class="ri-arrow-right-line text-xl relative"></i>
                         </a>
                     </div>
                     <img src="https://github.githubassets.com/assets/illu-pull-requests-2-280cc958fc05.png?width=604&format=webpll"
                         class="w-full mt-3">
                 </div>
-                <div class="card-3 w-full rounded-2xl overflow-hidden border bg-[--cardbg] flex flex-col md:flex-2 md:flex-row">
-                    <div class="text-content p-8 pb-10 flex flex-col justify-between md:flex-1">
-                        <p class="text-[--p] text-[5.8vw] leading-[7.5vw] font-semibold mb-5 md:text-[2.5vw] md:leading-7 md:w-[80%]">
+                <div
+                    class="card-3 w-full rounded-2xl overflow-hidden border bg-[--cardbg] flex flex-col md:flex-2 md:flex-row">
+                    <div class="text-content p-8 pb-10 flex flex-col justify-between lg:p-16 md:flex-1">
+                        <p
+                            class="text-[--p] text-[5.8vw] leading-[7.5vw] font-semibold mb-5 md:text-[2.5vw] md:leading-7 md:w-[80%] lg:text-[1.6vw]">
                             <span class="text-white">GitHub Sponsors </span>
                             lets you support your favorite open source maintainers and projects.
                         </p>
-                        <a href="" class="hover-btm-line text-[4.6vw] font-semibold md:text-[2.5vw]">
+                        <a href="" class="hover-btm-line text-[4.6vw] font-semibold md:text-[2.5vw] lg:text-[1.4vw]">
                             Invest with GitHub Sponsors
                             <i class="ri-arrow-right-line text-xl relative"></i>
                         </a>
@@ -1085,8 +1172,8 @@
             </div>
         </section>
         <!-- canvas -->
-        <section id="section-4" class="section w-full px-4">
-            <div class="w-full border flex ">
+        <section id="section-4" class="section px-4 w-full lg:px-[7.8vw]">
+            <div class="w-full border flex lg:px-4">
                 <div id="progress" class="w-1/12 border flex flex-col items-center">
                     <div
                         class="progress-bar h-[100%] w-1 bg-gradient-to-b from-transparent via-[--homeptn]  via-60% to-[--homebar] ">
@@ -1101,11 +1188,15 @@
                         </div>
                     </div>
                 </div>
-                <div id="content" class="w-11/12 h-full border">
+                <div id="content" class="w-11/12 h-full border pr-[20vw]">
                     <div class="w-full my-20">
-                        <h1 class="text-[10vw] leading-[12vw] font-semibold mb-10 md:text-[6vw] md:leading-[6vw]">Over 100 million developers call GitHub
-                            home<sup class="font-light">3</sup></h1>
-                        <p class="text-[4.5vw] leading-[6vw] md:text-[2.5vw] md:leading-[4vw]">Whether you're scaling your startup or just learning how
+                        <h1
+                            class="text-[10vw] leading-[12vw] font-semibold mb-10 md:text-[6vw] md:leading-[6vw] lg:text-[4vw] lg:leading-[4vw]">
+                            Over 100 million developers call GitHub
+                            home<sup class="font-light lg:text-[1.6vw] ">3</sup></h1>
+                        <p
+                            class="text-[4.5vw] leading-[6vw] md:text-[2.5vw] md:leading-[4vw] lg:text-[1.3vw] lg:leading-[1.8vw]">
+                            Whether you're scaling your startup or just learning how
                             to code, GitHub is your home. Join the world's largest developer platform to build the
                             innovations that empower humanity. Let's build from here.</p>
                     </div>
@@ -1125,9 +1216,8 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full border">
+            <div class="w-full border lg:px-4">
                 <div class="position-relative z-2 user-select-none home-globe-scene js-webgl-globe-data">
-
                     <div class="w-[70%] h-[700px] mx-auto relative ">
                         <img alt="" aria-hidden="true" width="150" height="150"
                             style="left: 0; top: 30%; animation: oscillate 3s linear infinite alternate;"
@@ -1175,10 +1265,10 @@
             </div>
         </section>
         <!-- footer -->
-        <section id="section-4" class="section w-full px-4">
-            <div class="w-full border py-10 ">
-                <div class="flex flex-wrap py-5 mb-5 gap-4">
-                    <div class="w-full border">
+        <section id="section-4" class="section px-4 w-full lg:px-[7.8vw] ">
+            <div class="w-full border py-10 lg:px-4">
+                <div class="flex flex-wrap py-5 mb-5 gap-4 lg:flex-nowrap">
+                    <div class="w-full border lg:flex-1">
                         <a href="/"
                             data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to home&quot;,&quot;label&quot;:&quot;text:home&quot;}"
                             class="" aria-label="Go to GitHub homepage">
@@ -1206,7 +1296,7 @@
                     </div>
 
 
-                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%]">
+                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%] lg:w-[15%]">
                         <h2 class=" mb-3">
                             Product
                         </h2>
@@ -1241,7 +1331,7 @@
                         </ul>
                     </div>
 
-                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%]">
+                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%] lg:w-[15%]">
                         <h2 class=" mb-3 ">
                             Platform
                         </h2>
@@ -1262,7 +1352,7 @@
                         </ul>
                     </div>
 
-                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%]">
+                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%] lg:w-[15%]">
                         <h2 class=" mb-3">
                             Support
                         </h2>
@@ -1292,7 +1382,7 @@
                         </ul>
                     </div>
 
-                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%]">
+                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%] lg:w-[15%]">
                         <h2 class="mb-3 ">
                             Company
                         </h2>
@@ -1330,9 +1420,9 @@
                 </div>
             </div>
         </section>
-        <div class="w-full flex bg-[--cardbg]">
-            <div class="w-full flex flex-col justify-between px-4 py-6 gap-2">
-                <ul class="flex items-center gap-2 border">
+        <div class="w-full flex bg-[--cardbg] px-[7.8vw]">
+            <div class="w-full flex flex-col justify-between px-4 py-6 gap-2 lg:flex-row border">
+                <ul class="flex lg:order-2 items-center gap-2 border">
                     <li class="mr-3">
                         <a href="/" class="color-fg-subtle">
                             <img src="https://github.githubassets.com/assets/x-023c3ca5e173.svg" height="16" width="16"
@@ -1383,7 +1473,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="flex flex-wrap border">
+                <ul class="flex lg:order-1 flex-wrap border">
                     <li class="mx-1 text-[12px] text-[--p]">
                         © 2024 GitHub, Inc.
                     </li>
@@ -1433,5 +1523,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
