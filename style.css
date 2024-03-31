@@ -179,6 +179,10 @@ p {
     
 }
 
+.top-navigation{
+    box-shadow: 5px 3px 10px black;
+}
+
 
 /* Reset some default styles for better consistency */
 * {
