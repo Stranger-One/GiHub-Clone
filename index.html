@@ -5,17 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub: Let's build from here · GitHub</title>
-    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://static-00.iconduck.com/assets.00/github-icon-2048x1988-jzvzcf2t.png"
+        type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body theme="dark">
-    <div id="main" class="overflow-hidden relative">
+    <!-- loader -->
+    <!-- <div
+        class="loader w-full h-screen bg-slate-900 fixed top-0 left-0 z-50 flex flex-col items-center justify-center">
+        <svg height="52" width="52" fill="var(--tc)" aria-hidden="true" viewBox="0 0 16 16" version="1.1"
+            data-view-component="true" class="cursor-pointer">
+            <path
+                d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
+            </path>
+        </svg>
+        <h1 class="text-[6vw] md:text-[3vw] lg:text-[2vw]">GitHub</h1>
+        <div>
+
+        </div>
+    </div> -->
+
+    <div id="main" class="overflow-hidden relative ">
         <!-- top navigation -->
-        <div class="top-navigation hidden lg:flex fixed top-0 left-0 z-50 items-center justify-between w-full h-20 bg-[--mainbg] px-5">
-            <div class="left-nav border flex item-center gap-6">
+        <div
+            class="top-navigation hidden lg:flex fixed top-0 left-0 z-50 items-center justify-between w-full h-20 bg-[--mainbg] px-5 -translate-y-[110%]">
+            <div class="left-nav flex item-center gap-6">
                 <div class="links">
                     <h2 class="text-md">Productivity</h2>
                 </div>
@@ -43,19 +60,19 @@
         <section id="section-0" class="w-full overflow-hidden px-2 relative lg:px-0">
             <div class="hero w-full relative ">
                 <img src="https://github.githubassets.com/assets/hero-desktop-a38b0fd77b6c.webp" alt=""
-                    class="absolute hidden left-[62%] top-[0%] border -z-10 object-cover h-full scale-90  md:object-left md:block lg:block">
+                    class="hero-desktop absolute hidden left-[62%] top-[0%] -z-10 object-cover h-full scale-90  md:object-left md:block lg:block">
 
                 <nav class="w-full h-16 relative z-30 hidden lg:block px-4">
                     <div class="w-full h-full flex justify-between items-center">
                         <div class="left-part flex h-full items-center justify-start gap-5">
                             <svg height="32" fill="var(--tc)" aria-hidden="true" viewBox="0 0 16 16" version="1.1"
-                                width="32" data-view-component="true" class="cursor-pointer">
+                                width="32" data-view-component="true" class="cursor-pointer nav-element">
                                 <path
                                     d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z">
                                 </path>
                             </svg>
                             <div class="links flex gap-5">
-                                <div class="nav-link cursor-pointer Product-dropdown relative">
+                                <div class="nav-link cursor-pointer Product-dropdown relative nav-element">
                                     <h2>Product</h2>
                                     <i class="ri-arrow-down-s-line"></i>
                                     <!-- Product-dropdown-menu -->
@@ -290,7 +307,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="nav-link cursor-pointer Solutions-dropdown relative">
+                                <div class="nav-link cursor-pointer Solutions-dropdown relative nav-element">
                                     <h2>Solutions</h2>
                                     <i class="ri-arrow-down-s-line"></i>
                                     <!-- Solutions-dropdown-menu -->
@@ -429,7 +446,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="nav-link cursor-pointer OpenSource-dropdown relative">
+                                <div class="nav-link cursor-pointer OpenSource-dropdown relative nav-element">
                                     <h2>Open Source</h2>
                                     <i class="ri-arrow-down-s-line"></i>
                                     <!-- OpenSource-dropdown-menu -->
@@ -497,14 +514,14 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="nav-link cursor-pointer">
+                                <div class="nav-link cursor-pointer nav-element">
                                     <h2>Pricing</h2>
                                 </div>
                             </div>
                         </div>
-                        <div class="right-part flex h-full items-center justify-start gap-3">
+                        <div class="right-part flex h-full items-center justify-start gap-3 nav-element">
                             <div
-                                class="input w-80 flex items-center gap-1 border-[1px] border-[#57606A] bg-[#293041] px-2 py-[3px] rounded-lg ">
+                                class="input w-80 flex items-center gap-1 border-[1px] border-[#57606A] bg-[#293041] px-2 py-[3px] rounded-lg">
                                 <i class="ri-search-line text-[--p]"></i>
                                 <input type="text" placeholder="Search or jump to..."
                                     class="h-full w-full p-1 bg-transparent focus:border-none focus:outline-none text-sm">
@@ -521,15 +538,14 @@
 
                         </div>
                     </div>
-
                 </nav>
-                <div class="w-full relative border pt-[70vw] md:pt-[18vw] px-2 flex lg:px-[7.8vw] lg:pt-[10vw]">
-                    <div id="progress" class="w-1/12 border pt-7 flex flex-col items-center shrink-0 lg:pt-0">
+                <div class="w-full relative pt-[70vw] md:pt-[18vw] px-2 flex lg:px-[7.8vw] lg:pt-[10vw]">
+                    <div class="hero-progress w-1/12 pt-7 flex flex-col items-center shrink-0 lg:pt-0">
                         <div class="p-1 border-[2px] border-[--p] rounded-full"></div>
                         <div
-                            class="progress-bar bar-1 h-[100%] w-[2px] bg-gradient-to-b from-transparent to-40% to-[--homebar] md:h-[80%]">
+                            class="progress-bar-hero bar-1 h-[100%] w-[2px] bg-gradient-to-b from-transparent to-40% to-[--homebar] md:h-[80%]">
                         </div>
-                        <div class="progress-point size-16 shrink-0 my-2 relative">
+                        <div class="progress-point-hero size-16 shrink-0 my-2 relative">
                             <div class="blur-point w-full h-full blur-[20px]"
                                 style="background: radial-gradient(closest-side, var(--homeptn), transparent);">
                             </div>
@@ -541,10 +557,10 @@
                                 </path>
                             </svg>
                         </div>
-                        <div class="progress-bar h-[100%] w-[2px] bg-gradient-to-b from-[--homebar] to-green-500 ">
+                        <div class="progress-bar-hero h-[100%] w-[2px] bg-gradient-to-b from-[--homebar] to-green-500 ">
                         </div>
                     </div>
-                    <div id="content" class="w-11/12 border p-1 ">
+                    <div class="hero-content w-11/12 p-1 ">
                         <h1
                             class="text-[15vw] leading-[15vw] mb-5 tracking-wide font-semibold md:text-[10vw] md:w-[60%] md:leading-[9vw] lg:text-[6vw] lg:w-full lg:leading-[6vw]">
                             Let's build from here
@@ -596,9 +612,10 @@
         </section>
         <!-- Productivity -->
         <section id="section-1" class="section px-4 w-full relative lg:px-[7.8vw]">
-            <img src="https://github.githubassets.com/assets/shape-0-df97fa6b0c27.svg" alt="" class="product-png absolute top-0 -right-1/4 w-1/2 hidden md:block lg:block lg:-right-[15%] lg:w-[45%]">
-            <div class="w-full border flex">
-                <div id="progress" class="w-1/12 border flex flex-col items-center shrink-0">
+            <img src="https://github.githubassets.com/assets/shape-0-df97fa6b0c27.svg" alt=""
+                class="product-png absolute top-0 -right-1/4 w-1/2 hidden md:block lg:block lg:-right-[15%] lg:w-[45%]">
+            <div class="w-full flex">
+                <div class="Productivity-progress w-1/12 flex flex-col items-center shrink-0">
                     <div class="progress-point size-16 shrink-0 my-2 relative">
                         <div class="blur-point w-full h-full blur-[20px]"
                             style="background: radial-gradient(closest-side, var(--proptn), transparent);">
@@ -614,37 +631,38 @@
                     </div>
                     <div class="progress-bar h-[100%] w-[2px] bg-gradient-to-b from-[--probar] to-transparent "></div>
                 </div>
-                <div id="content" class="w-11/12 h-full border pt-1 pb-24 md:pb-32 lg:pb-32">
-                    <h2 class="text-white text-[6vw] my-5 md:text-[3vw] lg:text-[1.6vw]">Productivity</h2>
+                <div class="w-11/12 h-full pt-1 pb-24 md:pb-32 lg:pb-32">
+                    <h2 class="section-heading transition duration-500 ease-in-out text-white text-[6vw] my-5 md:text-[3vw] lg:text-[1.6vw]">Productivity</h2>
                     <h3
-                        class=" text-[8vw] leading-[8vw] md:text-[5vw] md:leading-[5vw] lg:text-[3.1vw] lg:leading-[3.3vw] lg:w-[80%] ">
+                        class="section-desc transition duration-500 ease-in-out text-[8vw] leading-[8vw] md:text-[5vw] md:leading-[5vw] lg:text-[3.1vw] lg:leading-[3.3vw] lg:w-[80%] ">
                         <span class="text-green-500">Accelerate innovation</span> <br>
                         Our AI-powered platform increases the pace of software development.
                     </h3>
                 </div>
             </div>
-            <div class="w-full border z-20 relative">
+            <div class="w-full z-20 relative">
                 <img src="https://github.githubassets.com/assets/illu-copilot-editor-6474457a5b19.png" alt=""
-                    class="w-full rounded-2xl border">
+                    class="module-img transition duration-500 ease-in-out w-full rounded-2xl border">
 
             </div>
-            <div class="w-full border flex">
-                <div id="progress" class="w-1/12 border flex justify-center relative">
-                    <img src="https://github.githubassets.com/assets/git-branch-productivity-c304b83d09c7.svg" alt="" class="hidden absolute md:block md:bottom-[10%] md:left-[50%] lg:block lg:left-[50%] lg:bottom-[5%] lg:w-[70%]">
+            <div class="w-full flex">
+                <div class="w-1/12 flex justify-center relative">
+                    <img src="https://github.githubassets.com/assets/git-branch-productivity-c304b83d09c7.svg" alt=""
+                        class="hidden absolute md:block md:bottom-[10%] md:left-[50%] lg:block lg:left-[50%] lg:bottom-[5%] lg:w-[70%]">
                     <div
                         class="progress-bar bar-1 h-[100%] w-[2px] bg-gradient-to-b from-2% from-transparent via-green-500  to-transparent">
                     </div>
                 </div>
-                <div id="content" class="w-11/12 h-full border relative ">
+                <div class="rightToLeft w-11/12 h-full relative ">
                     <div
-                        class="size-[50vw] bg-purple-500 rounded-full blur-[100px] opacity-70 hidden md:block md:absolute md:-top-[250px] md:right-[80px] lg:size-[30vw]">
+                        class=" size-[50vw] bg-purple-500 rounded-full blur-[100px] opacity-70 hidden md:block md:absolute md:-top-[250px] md:right-[80px] lg:size-[30vw]">
                     </div>
                     <div
-                        class="w-3/5 border absolute -top-[200px] right-[20px] z-30 md:w-[45%] md:right-[0] lg:right-[60px] lg:w-[41%] lg:-top-[400px]">
+                        class=" transition duration-500 ease-in-out w-3/5 absolute -top-[200px] right-[20px] z-30 md:w-[45%] md:right-[0] lg:right-[60px] lg:w-[41%] lg:-top-[400px]">
                         <img src="https://github.githubassets.com/assets/illu-copilot-sidebar-3d2efb504577.png" alt=""
                             class="w-full rounded-lg z-30 ">
                     </div>
-                    <div class="para-1 pt-20 w-full flex flex-col md:pl-14 lg:pl-9">
+                    <div class=" transition duration-500 ease-in-out para-1 pt-20 w-full flex flex-col md:pl-14 lg:pl-9">
                         <h2
                             class="text-[5.5vw] text-[--p] mb-4 md:text-[2.5vw] md:w-[44%] lg:text-[1.6vw] lg:leading-[2vw]">
                             <em class="text-white font-semibold">GitHub Copilot</em>
@@ -655,7 +673,8 @@
                             GitHub Copilot
                             <i class="ri-arrow-right-line text-[22px]"></i></a>
                     </div>
-                    <div class="para-2 py-24 w-full border md:pl-14 md:w-[60%] md:mt-10 lg:pl-9 lg:w-[40%] lg:pt-28 lg:pb-20">
+                    <div
+                        class="didyouknow para-2 py-24 w-full md:pl-14 md:w-[60%] md:mt-10 lg:pl-9 lg:w-[40%] lg:pt-28 lg:pb-20">
                         <span
                             class="text-green-500 border-green-500 border-[1px] inline-block px-2  rounded-xl text-[3.2vw] md:text-[2vw] lg:text-[0.8vw]">
                             Did you know?
@@ -675,7 +694,7 @@
                     </div>
                 </div>
             </div>
-            <div id="card-container" class="w-full border flex flex-wrap gap-8">
+            <div id="card-container" class="w-full flex flex-wrap gap-8">
                 <!-- <img src="" alt=""> -->
                 <div
                     class="card-1 w-full rounded-2xl overflow-hidden border bg-[#161B22] flex flex-col md:flex-2 md:flex-row">
@@ -732,10 +751,11 @@
         </section>
         <!-- Application security -->
         <section id="section-2" class="section px-4 w-full relative overflow-hidden lg:px-[7.8vw]">
-            <img src="https://github.githubassets.com/assets/shape-2-f30dcc9bd35c.svg" alt="" class="absolute top-[200px] -right-[22%] -z-10 w-2/3 hidden md:block lg:block lg:w-[50%] lg:-right-[10%]">
-            <div class="w-full border flex">
-                <div class="w-full border flex">
-                    <div id="progress" class="w-1/12 border flex flex-col items-center shrink-0">
+            <img src="https://github.githubassets.com/assets/shape-2-f30dcc9bd35c.svg" alt=""
+                class="absolute top-[200px] -right-[22%] -z-10 w-2/3 hidden md:block lg:block lg:w-[50%] lg:-right-[10%]">
+            <div class="w-full flex">
+                <div class="w-full flex">
+                    <div class="w-1/12 flex flex-col items-center shrink-0">
                         <div
                             class="progress-bar h-[100%] w-[2px] bg-gradient-to-b to-[--appbar] from-transparent md:h-[70%]">
                         </div>
@@ -755,11 +775,11 @@
                         <div class="progress-bar h-[100%] w-[2px] bg-gradient-to-b from-[--appbar] to-transparent ">
                         </div>
                     </div>
-                    <div id="content" class="w-11/12 h-full border pt-44 pb-12 px-1 md:pb-28">
-                        <h2 class="text-white text-[6vw] my-4 md:text-[3vw] md:my-6 lg:text-[1.6vw]">Application
+                    <div class="w-11/12 h-full pt-44 pb-12 px-1 md:pb-28">
+                        <h2 class="section-heading transition duration-500 ease-in-outtext-white text-[6vw] my-4 md:text-[3vw] md:my-6 lg:text-[1.6vw]">Application
                             security</h2>
                         <h3
-                            class=" text-[8vw] leading-[8.5vw] md:text-[4.5vw] md:leading-[5.5vw] lg:text-[3vw] lg:leading-[3.5vw] lg:w-[60%]">
+                            class="section-desc transition duration-500 ease-in-out text-[8vw] leading-[8.5vw] md:text-[4.5vw] md:leading-[5.5vw] lg:text-[3vw] lg:leading-[3.5vw] lg:w-[60%]">
                             <span class="text-[--app]">Empower developers</span><br>
                             With GitHub, you can secure code in minutes.
                         </h3>
@@ -769,7 +789,7 @@
             <div class="steps p-8 mx-2 bg-[#161B22] rounded-lg border z-20 lg:w-full lg:mx-0">
                 <h2 class="text-[--p]">cmake.yml</h2>
                 <h3 class="text-[--p]">on:push</h3>
-                <div class="w-full md:flex border lg:px-[8vw] lg:py-[6vw]">
+                <div class="w-full md:flex lg:px-[8vw] lg:py-[6vw]">
                     <div
                         class="build flex p-5 mt-20 bg-[--build] rounded-lg md:w-1/2 md:items-center md:h-20 md:justify-between md:mt-8 lg:h-[75px]">
                         <div class="flex">
@@ -837,23 +857,24 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full border flex">
-                <div id="progress" class="w-1/12 border flex justify-center relative">
-                    <img src="https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg" alt="" class="hidden absolute md:block md:bottom-[10%] md:left-[50%] lg:block lg:left-[50%] lg:bottom-[5%] lg:w-[70%]">
+            <div class="w-full flex">
+                <div class="w-1/12 flex justify-center relative">
+                    <img src="https://github.githubassets.com/assets/git-branch-security-2-f6a799957581.svg" alt=""
+                        class="hidden absolute md:block md:bottom-[10%] md:left-[50%] lg:block lg:left-[50%] lg:bottom-[5%] lg:w-[70%]">
                     <div
                         class="progress-bar bar-1 h-[100%] w-[2px] bg-gradient-to-b from-2% from-transparent via-[--appbar]  to-transparent">
                     </div>
                 </div>
-                <div id="content" class="w-11/12 h-full border relative md:pl-10">
+                <div class="rightToLeft w-11/12 h-full relative md:pl-10">
                     <div
-                        class="hidden md:block size-[500px] bg-sky-700 rounded-full blur-[100px] opacity-70 -z-10  absolute -top-[350px] right-[50px]">
+                        class=" hidden md:block size-[500px] bg-sky-700 rounded-full blur-[100px] opacity-70 -z-10  absolute -top-[350px] right-[50px]">
                     </div>
-                    <div class="w-[90%] border absolute -top-[30px] -right-[40px] z-30 md:w-[50%] lg:w-[47%]">
+                    <div class=" transition duration-500 ease-in-out w-[90%] absolute -top-[30px] -right-[40px] z-30 md:w-[50%] lg:w-[47%]">
                         <img src="https://github.githubassets.com/assets/illu-ghas-list-84af1f1ce2b8.png" alt=""
                             class="rounded-lg ">
                     </div>
 
-                    <div class="para-1 pt-40 w-full flex flex-col md border md:w-[45%] lg:w-[46%] lg:pt-32">
+                    <div class=" transition duration-500 ease-in-out para-1 pt-40 w-full flex flex-col md md:w-[45%] lg:w-[46%] lg:pt-32">
                         <h2
                             class="text-[6vw] leading-[7vw] text-[--p] mb-4 md:text-[2.8vw] md:leading-[3.5vw] lg:text-[1.6vw] lg:leading-[2vw]">
                             <em class="text-white ">GitHub Advanced Security </em>
@@ -864,7 +885,7 @@
                             GitHub Advanced Security
                             <i class="ri-arrow-right-line text-[22px] relative"></i></a>
                     </div>
-                    <div class="para-2 mt-10 py-24 md:pt-32 md:pb-40 border lg:mt-8 lg:pb-36">
+                    <div class="para-2 mt-10 py-24 md:pt-32 md:pb-40 lg:mt-8 lg:pb-36">
                         <span
                             class="text-[--app] border-[--app] border-[1px] inline-block px-2 rounded-xl text-[3.5vw] md:text-[2vw] lg:text-[0.8vw] ">
                             Did you know?
@@ -877,7 +898,7 @@
                     </div>
                 </div>
             </div>
-            <div id="card-container" class="w-full border flex flex-wrap gap-8">
+            <div id="card-container" class="w-full flex flex-wrap gap-8">
                 <div
                     class="card-1 w-full rounded-2xl overflow-hidden border bg-[#161B22] flex flex-col md:flex-2 md:flex-row">
                     <div class="text-content flex flex-col justify-between p-8 md:w-45% lg:p-16">
@@ -932,10 +953,11 @@
         </section>
         <!-- Collaboration -->
         <section id="section-2" class="section px-4 w-full relative overflow-hidden lg:px-[7.8vw]">
-            <img src="https://github.githubassets.com/assets/shape-3-9e542b5c31b8.svg" alt="" class="absolute top-[150px] -right-[15%] w-[45%] hidden md:block lg:block lg:w-[35%] lg:-right-[5%]">
-            <div class="w-full border flex">
-                <div class="w-full border flex ">
-                    <div id="progress" class="w-1/12 border flex flex-col items-center shrink-0">
+            <img src="https://github.githubassets.com/assets/shape-3-9e542b5c31b8.svg" alt=""
+                class="absolute top-[150px] -right-[15%] w-[45%] hidden md:block lg:block lg:w-[35%] lg:-right-[5%]">
+            <div class="w-full flex">
+                <div class="w-full flex ">
+                    <div class="w-1/12 flex flex-col items-center shrink-0">
                         <div
                             class="progress-bar h-[70%] w-[2px] bg-gradient-to-b to-[--cotnbar] from-transparent md:h-[60%]">
                         </div>
@@ -955,10 +977,10 @@
                         <div class="progress-bar h-[100%] w-[2px] bg-gradient-to-b from-[--cotnbar] to-transparent ">
                         </div>
                     </div>
-                    <div id="content" class="w-11/12 h-full border pt-40 pb-16 px-1 md:pb-32 lg:w-[70%]">
-                        <h2 class="text-white text-[6vw] my-4 md:text-[3vw] lg:text-[1.6vw]">Collaboration</h2>
+                    <div class="w-11/12 h-full pt-40 pb-16 px-1 md:pb-32 lg:w-[70%]">
+                        <h2 class="section-heading transition duration-500 ease-in-outtext-white text-[6vw] my-4 md:text-[3vw] lg:text-[1.6vw]">Collaboration</h2>
                         <h3
-                            class=" text-[8vw] leading-[8.5vw] md:text-[4.8vw] md:leading-[6vw] lg:text-[3vw] lg:leading-[3vw]">
+                            class="section-desc transition duration-500 ease-in-out text-[8vw] leading-[8.5vw] md:text-[4.8vw] md:leading-[6vw] lg:text-[3vw] lg:leading-[3vw]">
                             <span class="text-[--cotn]">Supercharge collaboration</span><br>
                             GitHub helps your teams work more efficiently together.
                         </h3>
@@ -969,14 +991,15 @@
                 <img src="https://github.githubassets.com/assets/issues-plan-2-46d1ce1d4519.png?width=1249&format=webpll"
                     alt="" class="w-full rounded-xl border ">
             </div>
-            <div class="w-full border flex">
-                <div id="progress" class="w-1/12 border flex justify-center relative">
-                    <img src="https://github.githubassets.com/assets/git-branch-collaboration-2-e46b1fb1d363.svg" alt="" class="hidden absolute md:block md:bottom-[10%] md:left-[50%] lg:block lg:left-[50%] lg:bottom-[5%] lg:w-[70%]">
+            <div class="w-full flex">
+                <div class="w-1/12 flex justify-center relative">
+                    <img src="https://github.githubassets.com/assets/git-branch-collaboration-2-e46b1fb1d363.svg" alt=""
+                        class="hidden absolute md:block md:bottom-[10%] md:left-[50%] lg:block lg:left-[50%] lg:bottom-[5%] lg:w-[70%]">
                     <div
                         class="progress-bar bar-1 h-[100%] w-[2px] bg-gradient-to-b from-2% from-transparent via-[--cotnbar]  to-transparent">
                     </div>
                 </div>
-                <div id="content" class="w-11/12 h-full border relative pl-2">
+                <div class="w-11/12 h-full relative pl-2">
                     <div
                         class="hidden md:block size-[400px] bg-purple-900 rounded-full blur-[100px] opacity-70 absolute -top-[300px] -right-[10px] lg:size-[500px] lg:right-[30px] lg:-top-[200px] ">
                     </div>
@@ -985,7 +1008,7 @@
                             class="scale-110 absolute top-[5%] right-[0%] rounded-lg z-30">
 
                     </div>
-                    <div class="para-1 pt-40 w-full flex flex-col border md:w-[55%] md:pl-7 md:pt-20 lg:w-[50%]">
+                    <div class="para-1 pt-40 w-full flex flex-col md:w-[55%] md:pl-7 md:pt-20 lg:w-[50%]">
                         <h2
                             class="text-[5.6vw] leading-[7vw] text-[--p] mb-4 md:text-[3vw] md:leading-7 lg:text-[1.6vw]">
                             <em class="text-white ">GitHub Issues and GitHub Projects </em>
@@ -996,7 +1019,7 @@
                             start with GitHub Issues
                             <i class="ri-arrow-right-line text-[22px] relative"></i></a>
                     </div>
-                    <div class="para-2 mt-10 pt-16 pb-20 md:pl-7 md:mt-0 md:py-36 border lg:mt-16 lg:pb-28">
+                    <div class="para-2 mt-10 pt-16 pb-20 md:pl-7 md:mt-0 md:py-36 lg:mt-16 lg:pb-28">
                         <span
                             class="text-[--cotn] border-[--cotn] border-[1px] inline-block px-2  rounded-xl text-sm md:text-[2vw] lg:text-[0.8vw]">
                             Did you know?
@@ -1010,7 +1033,7 @@
                     </div>
                 </div>
             </div>
-            <div id="card-container" class="w-full border flex flex-wrap gap-8">
+            <div id="card-container" class="w-full flex flex-wrap gap-8">
 
                 <div
                     class="card-1 w-full rounded-2xl overflow-hidden border bg-[#161B22] md:flex-1 md:flex md:flex-col md:justify-between pr-[50px]">
@@ -1058,9 +1081,9 @@
                             <i class="ri-arrow-right-line text-xl relative"></i>
                         </a>
                     </div>
-                    <div class="w-full h-[450px] px-4 overflow-hidden md:px-0 border md:flex-1">
+                    <div class="w-full h-[450px] px-4 overflow-hidden md:px-0 md:flex-1">
                         <div
-                            class="w-full flex flex-wrap  justify-between -rotate-[17deg] origin-top-left -translate-y-20 border">
+                            class="w-full flex flex-wrap  justify-between -rotate-[17deg] origin-top-left -translate-y-20 ">
                             <div class="cards">
                                 <div class="w-[60%] rounded-md ">
                                     <img src="https://github.githubassets.com/assets/directus-4da9e46da0ac.png" alt=""
@@ -1167,8 +1190,8 @@
         </section>
         <!-- canvas -->
         <section id="section-4" class="section px-4 w-full lg:px-[7.8vw]">
-            <div class="w-full border flex lg:px-4">
-                <div id="progress" class="w-1/12 border flex flex-col items-center">
+            <div class="w-full flex lg:px-4">
+                <div class="w-1/12 flex flex-col items-center">
                     <div
                         class="progress-bar h-[100%] w-1 bg-gradient-to-b from-transparent via-[--homeptn]  via-60% to-[--homebar] ">
                     </div>
@@ -1182,7 +1205,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="content" class="w-11/12 h-full border pr-[20vw]">
+                <div class="w-11/12 h-full pr-[20vw]">
                     <div class="w-full my-20">
                         <h1
                             class="text-[10vw] leading-[12vw] font-semibold mb-10 md:text-[6vw] md:leading-[6vw] lg:text-[4vw] lg:leading-[4vw]">
@@ -1210,7 +1233,7 @@
                     </div>
                 </div>
             </div>
-            <div class="w-full border lg:px-4">
+            <div class="w-full lg:px-4">
                 <div class="position-relative z-2 user-select-none home-globe-scene js-webgl-globe-data">
                     <div class="w-[70%] h-[700px] mx-auto relative ">
                         <img alt="" aria-hidden="true" width="150" height="150"
@@ -1260,9 +1283,9 @@
         </section>
         <!-- footer -->
         <section id="section-4" class="section px-4 w-full lg:px-[7.8vw] ">
-            <div class="w-full border py-10 lg:px-4">
+            <div class="w-full py-10 lg:px-4">
                 <div class="flex flex-wrap py-5 mb-5 gap-4 lg:flex-nowrap">
-                    <div class="w-full border lg:flex-1">
+                    <div class="w-full lg:flex-1">
                         <a href="/"
                             data-analytics-event="{&quot;category&quot;:&quot;Footer&quot;,&quot;action&quot;:&quot;go to home&quot;,&quot;label&quot;:&quot;text:home&quot;}"
                             class="" aria-label="Go to GitHub homepage">
@@ -1282,7 +1305,7 @@
                             <p class=" text-sm text-[--p] mb-10">
                                 Get tips, technical guides, and best practices. Twice a month. Right in your inbox.
                             </p>
-                            <a class="border px-6 py-4 rounded-lg w-fit" href="/">
+                            <a class="px-6 py-4 rounded-lg w-fit" href="/">
                                 Subscribe
                             </a>
                         </div>
@@ -1290,7 +1313,7 @@
                     </div>
 
 
-                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%] lg:w-[15%]">
+                    <div class="text-[--p] text-sm w-[45%] md:w-[23%] lg:w-[15%]">
                         <h2 class=" mb-3">
                             Product
                         </h2>
@@ -1325,7 +1348,7 @@
                         </ul>
                     </div>
 
-                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%] lg:w-[15%]">
+                    <div class="text-[--p] text-sm w-[45%] md:w-[23%] lg:w-[15%]">
                         <h2 class=" mb-3 ">
                             Platform
                         </h2>
@@ -1346,7 +1369,7 @@
                         </ul>
                     </div>
 
-                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%] lg:w-[15%]">
+                    <div class="text-[--p] text-sm w-[45%] md:w-[23%] lg:w-[15%]">
                         <h2 class=" mb-3">
                             Support
                         </h2>
@@ -1376,7 +1399,7 @@
                         </ul>
                     </div>
 
-                    <div class="text-[--p] text-sm border w-[45%] md:w-[23%] lg:w-[15%]">
+                    <div class="text-[--p] text-sm w-[45%] md:w-[23%] lg:w-[15%]">
                         <h2 class="mb-3 ">
                             Company
                         </h2>
@@ -1415,8 +1438,8 @@
             </div>
         </section>
         <div class="w-full flex bg-[--cardbg] px-[7.8vw]">
-            <div class="w-full flex flex-col justify-between px-4 py-6 gap-2 lg:flex-row border">
-                <ul class="flex lg:order-2 items-center gap-2 border">
+            <div class="w-full flex flex-col justify-between px-4 py-6 gap-2 lg:flex-row ">
+                <ul class="flex lg:order-2 items-center gap-2 ">
                     <li class="mr-3">
                         <a href="/" class="color-fg-subtle">
                             <img src="https://github.githubassets.com/assets/x-023c3ca5e173.svg" height="16" width="16"
@@ -1467,7 +1490,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="flex lg:order-1 flex-wrap border">
+                <ul class="flex lg:order-1 flex-wrap">
                     <li class="mx-1 text-[12px] text-[--p]">
                         © 2024 GitHub, Inc.
                     </li>
@@ -1513,8 +1536,12 @@
 
             </div>
         </div>
-
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="script.js"></script>
 </body>
+
 </html>
